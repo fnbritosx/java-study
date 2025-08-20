@@ -64,6 +64,5 @@ public class Class04Operators {
         -- count;
 
         System.out.println("Final count value: " + count);
-
     }
 }
