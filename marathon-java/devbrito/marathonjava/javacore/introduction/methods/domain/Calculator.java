@@ -27,4 +27,11 @@ public class Calculator {
             System.out.println(numberOne / numberTwo);
         }
     }
+
+    public void alterTwoNumbers (int numberOne, int numberTwo){
+        numberOne = 10;
+        numberTwo = 20;
+        System.out.println("The new numberOne is: " + numberOne);
+        System.out.println("The new numberTwo is: " + numberTwo);
+    }
 }
