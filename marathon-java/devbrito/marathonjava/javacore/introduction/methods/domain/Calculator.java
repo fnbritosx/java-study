@@ -34,4 +34,21 @@ public class Calculator {
         System.out.println("The new numberOne is: " + numberOne);
         System.out.println("The new numberTwo is: " + numberTwo);
     }
+    public void sumArray(int[] numbers){
+        int count = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            int number = numbers[i];
+            count += number;
+        }
+        System.out.println(count);
+    }
+
+    // VarArgs must be the last parameter of the method, and can only have one per method.
+    public void sumVarArgs(int age, int... numbers){
+        int count = 0;
+        for(int number : numbers){
+            count += number;
+        }
+        System.out.println(count);
+    }
 }
