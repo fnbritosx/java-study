@@ -1,4 +1,4 @@
-package devbrito.marathonjava.javacore.introduction.classes.domain;
+package devbrito.marathonjava.javacore.classes.domain;
 
 public class Teacher {
     public String name;

@@ -1,4 +1,4 @@
-package devbrito.marathonjava.javacore.introduction.staticmodifier.domain;
+package devbrito.marathonjava.javacore.staticmodifier.domain;
 
 public class Anime {
     private String name;

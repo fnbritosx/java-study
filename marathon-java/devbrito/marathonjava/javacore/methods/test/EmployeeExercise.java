@@ -1,8 +1,8 @@
-package devbrito.marathonjava.javacore.introduction.methods.test;
+package devbrito.marathonjava.javacore.methods.test;
 
-import devbrito.marathonjava.javacore.introduction.methods.domain.AverageSalariesEmployee;
-import devbrito.marathonjava.javacore.introduction.methods.domain.Employee;
-import devbrito.marathonjava.javacore.introduction.methods.domain.WriteGivenEmployee;
+import devbrito.marathonjava.javacore.methods.domain.AverageSalariesEmployee;
+import devbrito.marathonjava.javacore.methods.domain.Employee;
+import devbrito.marathonjava.javacore.methods.domain.WriteGivenEmployee;
 
 public class EmployeeExercise {
     public static void main(String[] args) {

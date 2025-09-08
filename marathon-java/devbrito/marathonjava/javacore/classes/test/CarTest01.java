@@ -1,6 +1,6 @@
-package devbrito.marathonjava.javacore.introduction.classes.test;
+package devbrito.marathonjava.javacore.classes.test;
 
-import devbrito.marathonjava.javacore.introduction.classes.domain.Car;
+import devbrito.marathonjava.javacore.classes.domain.Car;
 
 public class CarTest01 {
     public static void main(String[] args) {

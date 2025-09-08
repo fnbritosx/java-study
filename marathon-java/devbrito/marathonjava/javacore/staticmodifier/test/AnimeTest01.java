@@ -1,6 +1,6 @@
-package devbrito.marathonjava.javacore.introduction.staticmodifier.test;
+package devbrito.marathonjava.javacore.staticmodifier.test;
 
-import devbrito.marathonjava.javacore.introduction.staticmodifier.domain.Anime;
+import devbrito.marathonjava.javacore.staticmodifier.domain.Anime;
 
 public class AnimeTest01 {
     public static void main(String[] args) {

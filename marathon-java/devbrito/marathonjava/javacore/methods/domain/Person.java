@@ -1,4 +1,4 @@
-package devbrito.marathonjava.javacore.introduction.methods.domain;
+package devbrito.marathonjava.javacore.methods.domain;
 
 public class Person {
     private String name;

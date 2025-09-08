@@ -1,4 +1,4 @@
-package devbrito.marathonjava.javacore.introduction.methodoverload.domain;
+package devbrito.marathonjava.javacore.methodoverload.domain;
 
 public class Anime {
     private String name;

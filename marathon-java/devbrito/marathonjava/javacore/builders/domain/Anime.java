@@ -1,4 +1,4 @@
-package devbrito.marathonjava.javacore.introduction.builders.domain;
+package devbrito.marathonjava.javacore.builders.domain;
 
 public class Anime {
     private String name;

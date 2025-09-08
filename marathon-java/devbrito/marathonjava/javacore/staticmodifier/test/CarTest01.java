@@ -1,6 +1,6 @@
-package devbrito.marathonjava.javacore.introduction.staticmodifier.test;
+package devbrito.marathonjava.javacore.staticmodifier.test;
 
-import devbrito.marathonjava.javacore.introduction.staticmodifier.domain.Car;
+import devbrito.marathonjava.javacore.staticmodifier.domain.Car;
 
 public class CarTest01 {
     public static void main(String[] args) {

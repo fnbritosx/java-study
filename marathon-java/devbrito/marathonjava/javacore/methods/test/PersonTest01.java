@@ -1,6 +1,6 @@
-package devbrito.marathonjava.javacore.introduction.methods.test;
+package devbrito.marathonjava.javacore.methods.test;
 
-import devbrito.marathonjava.javacore.introduction.methods.domain.Person;
+import devbrito.marathonjava.javacore.methods.domain.Person;
 
 public class PersonTest01 {
     public static void main(String[] args) {

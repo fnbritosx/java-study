@@ -1,6 +1,6 @@
-package devbrito.marathonjava.javacore.introduction.methodoverload.test;
+package devbrito.marathonjava.javacore.methodoverload.test;
 
-import devbrito.marathonjava.javacore.introduction.methodoverload.domain.Anime;
+import devbrito.marathonjava.javacore.methodoverload.domain.Anime;
 
 public class AnimeTest01 {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package devbrito.marathonjava.javacore.introduction.methods.test;
+package devbrito.marathonjava.javacore.methods.test;
 
-import devbrito.marathonjava.javacore.introduction.methods.domain.Calculator;
+import devbrito.marathonjava.javacore.methods.domain.Calculator;
 
 public class CalculatorTest04 {
     public static void main(String[] args) {

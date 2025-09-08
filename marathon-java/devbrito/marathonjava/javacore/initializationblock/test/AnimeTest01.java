@@ -1,6 +1,6 @@
-package devbrito.marathonjava.javacore.introduction.initializationblock.test;
+package devbrito.marathonjava.javacore.initializationblock.test;
 
-import devbrito.marathonjava.javacore.introduction.initializationblock.domain.Anime;
+import devbrito.marathonjava.javacore.initializationblock.domain.Anime;
 
 public class AnimeTest01 {
     public static void main(String[] args) {

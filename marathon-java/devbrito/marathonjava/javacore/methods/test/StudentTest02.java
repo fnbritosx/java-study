@@ -1,5 +1,5 @@
-package devbrito.marathonjava.javacore.introduction.methods.test;
-import devbrito.marathonjava.javacore.introduction.methods.domain.Student;
+package devbrito.marathonjava.javacore.methods.test;
+import devbrito.marathonjava.javacore.methods.domain.Student;
 
 public class StudentTest02 {
     public static void main(String[] args) {

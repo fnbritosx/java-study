@@ -1,6 +1,6 @@
-package devbrito.marathonjava.javacore.introduction.classes.test;
+package devbrito.marathonjava.javacore.classes.test;
 
-import devbrito.marathonjava.javacore.introduction.classes.domain.Teacher;
+import devbrito.marathonjava.javacore.classes.domain.Teacher;
 
 public class TeacherTest01 {
     public static void main(String[] args) {

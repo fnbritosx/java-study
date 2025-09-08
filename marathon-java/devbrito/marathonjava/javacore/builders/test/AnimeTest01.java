@@ -1,6 +1,6 @@
-package devbrito.marathonjava.javacore.introduction.builders.test;
+package devbrito.marathonjava.javacore.builders.test;
 
-import devbrito.marathonjava.javacore.introduction.builders.domain.Anime;
+import devbrito.marathonjava.javacore.builders.domain.Anime;
 
 public class AnimeTest01 {
     public static void main(String[] args) {
