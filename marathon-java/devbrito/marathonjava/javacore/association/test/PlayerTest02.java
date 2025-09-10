@@ -13,8 +13,8 @@ public class PlayerTest02 {
         Player[] players = new Player[]{player01, player02, player03};
 
         for(Player player : players){
-            player.setTeam(team);
-            player.playerPrint();
+            player.addTeam(team);
+            player.playerPrinter();
         }
     }
 }

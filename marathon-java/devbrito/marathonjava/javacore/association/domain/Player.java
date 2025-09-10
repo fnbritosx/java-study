@@ -1,35 +1,37 @@
 package devbrito.marathonjava.javacore.association.domain;
 
+import java.util.List;
+import java.util.ArrayList;
+
 public class Player {
     private String name;
-    private Team team;
-
-    public void playerPrint(){
-        if(team == null) {
-            System.out.println(name);
-        }
-        if(team != null){
-            System.out.printf("%s - %s%n", name, team.getName());
-        }
-    }
+    private List<Team> teamArray = new ArrayList<>();
 
     public Player(String name) {
         this.name = name;
     }
 
-    public Team getTeam() {
-        return team;
+    public void playerPrinter(){
+        if(teamArray.isEmpty()){
+            System.out.println(name);
+        } else{
+            System.out.println(name + " - Teams: " );
+            for(Team team:teamArray){
+                System.out.println(team.getName() + " ");
+            }
+            System.out.println();
+        }
     }
 
-    public void setTeam(Team team) {
-        this.team = team;
+    public List<Team> getTeamArray() {
+        return teamArray;
+    }
+
+    public void addTeam(Team team) {
+        this.teamArray.add(team);
     }
 
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 }
