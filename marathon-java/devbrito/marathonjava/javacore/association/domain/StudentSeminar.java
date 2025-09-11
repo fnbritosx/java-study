@@ -13,24 +13,4 @@ public class StudentSeminar {
     public String getName() {
         return name;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public Seminar getSeminar() {
-        return seminar;
-    }
-
-    public void setSeminar(Seminar seminar) {
-        this.seminar = seminar;
-    }
 }

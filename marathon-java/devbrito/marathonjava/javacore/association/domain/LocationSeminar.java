@@ -7,11 +7,8 @@ public class LocationSeminar {
         this.address = address;
     }
 
-    public String getAddress() {
+    public String getAddress(){
         return address;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
-    }
 }
