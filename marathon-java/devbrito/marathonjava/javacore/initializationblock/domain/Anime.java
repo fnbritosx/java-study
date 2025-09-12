@@ -3,10 +3,12 @@ package devbrito.marathonjava.javacore.initializationblock.domain;
 public class Anime {
     private String name;
     private int[] episodes;
-    // 1 - allocated memory space for the object
-    // 2 - each class attribute is created and initialized with default values default or whatever is passed
-    // 3 - initialization block is executed
-    // 4 - constructor is executed
+    // 1 - Static blocks are executed once (when the class is loaded for the first time)
+    // 2 - Memory is allocated for the object
+    // 3 - Instance attributes are initialized (default values → explicit values)
+    // 4 - Instance initialization blocks (non-static) are executed
+    // 5 - Constructor is executed
+
     {
         episodes = new int[100];
         for (int i = 0; i < episodes.length; i++) {
