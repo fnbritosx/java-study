@@ -39,5 +39,7 @@ public class AgeInYearsMonthsDays {
         System.out.println(years + " years");
         System.out.println(months + " months");
         System.out.println(days + " days");
+
+        scanner.close();
     }
 }
