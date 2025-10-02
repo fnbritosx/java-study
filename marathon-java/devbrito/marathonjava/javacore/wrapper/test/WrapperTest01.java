@@ -2,6 +2,7 @@ package devbrito.marathonjava.javacore.wrapper.test;
 
 public class WrapperTest01 {
     public static void main(String[] args) {
+        //CLASS 01
         float floatP = 2500f;
         double doubleP = 2000;
         char charP = 'W';
@@ -9,14 +10,15 @@ public class WrapperTest01 {
 
         Byte byteW = 127;
         Short shortW = 3200;
-        Integer intW = 18; //autoboxing
+        Integer intW = 18; //autoboxing - type primitive for type wrapper.
         Long longW = 100000L;
         Float floatW = 2500f;
         Double doubleW = 2000D;
         Character charW = 'W';
         Boolean booleanW = true;
 
-        int i = intW; //unboxing
+        //CLASS 02
+        int i = intW; //unboxing - type wrapper for type primitive.
         Integer intW2 = Integer.parseInt("1");
         boolean trueB = Boolean.parseBoolean("null");
         System.out.println(trueB);
