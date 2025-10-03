@@ -1,4 +1,4 @@
-package devbrito.marathonjava.javacore.wrapper.test;
+package devbrito.marathonjava.javacore.wrapper.introduction.test;
 
 public class WrapperTest01 {
     public static void main(String[] args) {
