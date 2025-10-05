@@ -1,6 +1,6 @@
 package devbrito.marathonjava.javacore.utility_classes.string.test;
 
-public class StringPerformanceTest {
+public class StringPerformanceTest01 {
     public static void main(String[] args) {
 
         long startString = System.currentTimeMillis();
