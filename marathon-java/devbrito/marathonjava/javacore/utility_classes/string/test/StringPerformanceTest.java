@@ -1,4 +1,4 @@
-package devbrito.marathonjava.javacore.wrapper.string.test;
+package devbrito.marathonjava.javacore.utility_classes.string.test;
 
 public class StringPerformanceTest {
     public static void main(String[] args) {
