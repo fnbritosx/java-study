@@ -1,8 +1,7 @@
-package devbrito.marathonjava.javacore.utility_classes.date.test;
+package devbrito.marathonjava.javacore.utility_classes.date_format.test;
 
 import java.text.DateFormat;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.Locale;
 
 public class LocaleTest01 {

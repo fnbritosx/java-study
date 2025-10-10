@@ -1,4 +1,4 @@
-package devbrito.marathonjava.javacore.utility_classes.date.test;
+package devbrito.marathonjava.javacore.utility_classes.date_format.test;
 
 import java.text.NumberFormat;
 import java.util.Locale;
