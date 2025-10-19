@@ -22,6 +22,8 @@ public class PatternMatcherTest02 {
         // | - or.
         // $ - end of line.
         // . - joker (e.g., 1.3 - 123, 133, 1@3, 1A3  etc.)
+        // ^ - beginning of the line (outside brackets) OR negation (inside brackets)
+
         String text = "0x1F 0Xabc 0x 0xGHI 0x12345 0x0 0xZ12 0xDEADBEEF 0x1g3 0xFFF 0x12zzzzz";
         String regex = "0[xX][0-9a-fA-F]+(\\s|$)";
 
