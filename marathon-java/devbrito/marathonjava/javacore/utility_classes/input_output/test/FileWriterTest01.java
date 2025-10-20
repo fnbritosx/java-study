@@ -6,6 +6,10 @@ import java.io.IOException;
 
 public class FileWriterTest01 {
     public static void main(String[] args) {
+        // File
+        // FileReader
+        // BufferedWriter
+        // BufferedReader
         File file = new File("text.txt");
         try (FileWriter fileWriter = new FileWriter(file, true);){
             fileWriter.write("This is art. No joke...\n");
