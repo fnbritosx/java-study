@@ -1,9 +1,7 @@
-package javamarathon.javacore.utility_classes.new_input_output.test.relativize;
+package javamarathon.javacore.utility_classes.new_input_output.relativize.test;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.file.attribute.BasicFileAttributes;
-import java.nio.file.attribute.DosFileAttributes;
 
 public class RelativizeTest01 {
     public static void main(String[] args) {

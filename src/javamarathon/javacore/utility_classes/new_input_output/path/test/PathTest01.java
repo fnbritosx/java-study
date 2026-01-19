@@ -1,4 +1,4 @@
-package javamarathon.javacore.utility_classes.new_input_output.test.path;
+package javamarathon.javacore.utility_classes.new_input_output.path.test;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
