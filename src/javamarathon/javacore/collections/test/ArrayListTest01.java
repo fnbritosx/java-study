@@ -1,4 +1,4 @@
-package javamarathon.javacore.collections.list.arraylist.test;
+package javamarathon.javacore.collections.test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +12,7 @@ public class ArrayListTest01 {
         name.add("Brito");
         name.add("Neto");
 
-         name2.add("Eren");
+        name2.add("Eren");
         name2.add("Yeager");
         name2.add("Ackerman");
 
@@ -20,7 +20,7 @@ public class ArrayListTest01 {
         name.remove(0);
         name.remove("Eren");
 
-        for(int i = 0; i < name.size(); i++){
+        for (int i = 0; i < name.size(); i++) {
             System.out.println(name.get(i));
         }
 

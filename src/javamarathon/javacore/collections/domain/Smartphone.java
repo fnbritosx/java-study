@@ -1,4 +1,4 @@
-package javamarathon.javacore.collections.equals.domain;
+package javamarathon.javacore.collections.domain;
 
 public class Smartphone {
     private String serialNumber;

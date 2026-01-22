@@ -1,6 +1,6 @@
-package javamarathon.javacore.collections.list.arraylist.test;
+package javamarathon.javacore.collections.test;
 
-import javamarathon.javacore.collections.equals.domain.Smartphone;
+import javamarathon.javacore.collections.domain.Smartphone;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +17,7 @@ public class SmartphoneTest01 {
         smartphones.add(s1);
         smartphones.add(s2);
         smartphones.add(s3);
-        smartphones.add(0, s4);
+        smartphones.addFirst(s4);
 
         for (Smartphone smartphone : smartphones) {
             System.out.println(smartphone);
@@ -28,5 +28,10 @@ public class SmartphoneTest01 {
         Smartphone s5 = new Smartphone("3333320981238921", "sla");
 
         System.out.println(smartphones.indexOf(s5));
+
+        Smartphone smartphone01 = new Smartphone("1A2B", "Samsung");
+        Smartphone smartphone02 = new Smartphone("1A2B", "Samsung");
+
+        System.out.println(smartphone01.equals(smartphone02));
     }
 }
