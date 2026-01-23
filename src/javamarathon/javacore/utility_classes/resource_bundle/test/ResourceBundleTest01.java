@@ -12,12 +12,12 @@ public class ResourceBundleTest01 {
         // messages_pt.properties
         // messages.properties (default)
 
-        ResourceBundle resourceBundle = ResourceBundle.getBundle("messages", Locale.of("en", "US"));
+        ResourceBundle resourceBundle = ResourceBundle.getBundle("messages", Locale.forLanguageTag("en-US"));
         System.out.println(resourceBundle.getString("hello"));
         System.out.println(resourceBundle.getString("good.morning"));
         System.out.println(resourceBundle.getString("hi"));
 
-        resourceBundle = ResourceBundle.getBundle("messages", Locale.of("pt", "BR"));
+        resourceBundle = ResourceBundle.getBundle("messages", Locale.forLanguageTag("pt-BR"));
         System.out.println(resourceBundle.getString("hello"));
         System.out.println(resourceBundle.getString("good.morning"));
         System.out.println(resourceBundle.getString("hi"));

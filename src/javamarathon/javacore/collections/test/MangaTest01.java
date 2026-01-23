@@ -7,11 +7,11 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-class comparatorByName implements Comparator<Manga> {
+class mangaByIdComparator implements Comparator<Manga> {
 
     @Override
     public int compare(Manga o1, Manga o2) {
-        return o1.getNome().compareTo(o2.getNome());
+        return o1.getId().compareTo(o2.getId());
     }
 }
 
@@ -39,7 +39,7 @@ public class MangaTest01 {
 
         System.out.println("---------------");
 
-        mangas.sort(new comparatorByName());
+        mangas.sort(new mangaByIdComparator());
 
         for (Manga manga : mangas) {
             System.out.println(manga);

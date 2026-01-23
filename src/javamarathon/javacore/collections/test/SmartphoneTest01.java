@@ -17,7 +17,7 @@ public class SmartphoneTest01 {
         smartphones.add(s1);
         smartphones.add(s2);
         smartphones.add(s3);
-        smartphones.addFirst(s4);
+        smartphones.add(s4);
 
         for (Smartphone smartphone : smartphones) {
             System.out.println(smartphone);
