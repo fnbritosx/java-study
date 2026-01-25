@@ -25,9 +25,8 @@ public class IteratorTest01 {
 //            }
 //        }
 
-        Iterator<Manga> mangaIterator = mangas.iterator();
-
         // jeito antigo
+//        Iterator<Manga> mangaIterator = mangas.iterator();
 //        while(mangaIterator.hasNext()){
 //            if (mangaIterator.next().getQuantidade() == 0){
 //                mangaIterator.remove();
