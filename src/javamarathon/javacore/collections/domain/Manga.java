@@ -59,6 +59,10 @@ public class Manga implements Comparable<Manga> {
         return nome;
     }
 
+    public double getPreco() {
+        return preco;
+    }
+
     @Override
     public int compareTo(Manga o) {
         return this.getNome().compareTo(o.getNome());
