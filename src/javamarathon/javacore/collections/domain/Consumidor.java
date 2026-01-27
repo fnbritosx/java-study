@@ -35,4 +35,8 @@ public class Consumidor {
     public String getNome() {
         return nome;
     }
+
+    public long getId() {
+        return id;
+    }
 }
