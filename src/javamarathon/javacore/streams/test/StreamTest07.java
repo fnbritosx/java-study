@@ -1,0 +1,45 @@
+package javamarathon.javacore.streams.test;
+
+import java.util.List;
+
+public class StreamTest07 {
+    public static void main(String[] args) {
+        List<Integer> integers = List.of(1, 2, 3, 4, 5);
+
+        System.out.println("Soma de números: ");
+
+        integers.stream()
+                .reduce((x, y) -> x + y).ifPresent(System.out::println);
+
+        System.out.println(integers.stream()
+                .reduce(0, Integer::sum));
+
+        integers.stream()
+                .reduce(Integer::sum).ifPresent(System.out::println);
+
+
+        System.out.println("-----------------");
+        System.out.println("Multiplicação de números: ");
+
+
+        integers.stream()
+                .reduce((x, y) -> x * y).ifPresent(System.out::println);
+
+        System.out.println(integers.stream()
+                .reduce(1, (x, y) -> x * y));
+
+
+        System.out.println("-----------------");
+        System.out.println("Maior número: ");
+
+
+        integers.stream()
+                .reduce((x, y) -> x > y ? x : y).ifPresent(System.out::println);
+
+        integers.stream()
+                .reduce(Integer::max).ifPresent(System.out::println);
+
+        System.out.println(integers.stream()
+                .reduce(100, Integer::max));
+    }
+}
