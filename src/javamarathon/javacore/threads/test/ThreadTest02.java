@@ -15,7 +15,7 @@ class Corredor implements Runnable {
             if (nome.equals("Corredor ALTA Prioridade")) {
                 System.out.println("--- " + nome + " tentando dar a vez com yield() ---");
                 // Vai tentar ceder a vez
-                Thread.yield();
+//                Thread.yield();
             }
         }
         System.out.println(">>> " + nome + " FINALIZOU!");
@@ -32,6 +32,13 @@ public class ThreadTest02 {
         t2.setPriority(Thread.MAX_PRIORITY);
 
         t1.start();
+
+        // o running faz todos os processos e a thread main bloqueia todas as outras threads até que os processos finalizem.
+        try {
+            t1.join();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         t2.start();
     }
 }
