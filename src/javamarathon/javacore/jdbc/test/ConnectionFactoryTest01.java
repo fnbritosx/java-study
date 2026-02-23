@@ -5,9 +5,9 @@ import javamarathon.javacore.jdbc.repository.ProducerRepository;
 
 public class ConnectionFactoryTest01 {
     public static void main(String[] args) {
-        Producer autor = new Producer.ProducerBuilder()
-                .name("Hajime Isayama")
-                .build();
-        ProducerRepository.save(autor);
+//        Producer producer = Producer.builder().name("Reki Kawahara").build();
+//        ProducerRepository.save(producer);
+
+        ProducerRepository.delete(5);
     }
 }
