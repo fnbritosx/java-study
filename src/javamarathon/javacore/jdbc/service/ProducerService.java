@@ -3,6 +3,8 @@ package javamarathon.javacore.jdbc.service;
 import javamarathon.javacore.jdbc.domain.Producer;
 import javamarathon.javacore.jdbc.repository.ProducerRepository;
 
+import java.util.List;
+
 public class ProducerService {
     public static void save(Producer producer) {
         ProducerRepository.save(producer);
@@ -26,4 +28,9 @@ public class ProducerService {
         ProducerRepository.update(producer);
     }
 
+    public static List<Producer> findAll(){
+
+
+        return ProducerRepository.findAll();
+    }
 }
