@@ -6,7 +6,7 @@ echo #             RESTAURANDO ESTADO DO BANCO                 #
 echo ###########################################################
 echo.
 echo  ATENCAO: Os dados atuais do Docker serao substituidos
-echo  pelo conteúdo do arquivo ./sql/init.sql.
+echo  pelo conteudo do arquivo ./sql/init.sql.
 echo.
 set /p choice="Deseja continuar? (S/N): "
 

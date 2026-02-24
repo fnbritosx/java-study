@@ -1,13 +1,12 @@
 package javamarathon.javacore.jdbc.test;
 
 import javamarathon.javacore.jdbc.domain.Producer;
-import javamarathon.javacore.jdbc.repository.ProducerRepository;
+import javamarathon.javacore.jdbc.service.ProducerService;
 
 public class ConnectionFactoryTest01 {
     public static void main(String[] args) {
-//        Producer producer = Producer.builder().name("Reki Kawahara").build();
-//        ProducerRepository.save(producer);
+        Producer update = Producer.builder().id(3).name("CHUCK").build();
 
-        ProducerRepository.delete(5);
+        ProducerService.update(update);
     }
 }
