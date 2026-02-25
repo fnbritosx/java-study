@@ -5,8 +5,6 @@ import javamarathon.javacore.jdbc.service.ProducerService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.List;
-
 public class ConnectionFactoryTest01 {
     private static final Logger log = LogManager.getLogger(ConnectionFactoryTest01.class);
 
@@ -15,8 +13,11 @@ public class ConnectionFactoryTest01 {
 //        List<Producer> producers = ProducerService.findAll();
 //        List<Producer> producers = ProducerService.findByName("a");
 //        log.info("Producers: '{}'", producers);
+//        ProducerService.showProducerMetadata();
+//        ProducerService.showDbMetadata();
+//        ProducerService.showTypeScrollWorking();
 
-        ProducerService.showProducerMetadata();
-
+        ProducerService.findByNameAndDelete("bom");
     }
 }
+
