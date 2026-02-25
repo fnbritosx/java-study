@@ -12,8 +12,11 @@ public class ConnectionFactoryTest01 {
 
     public static void main(String[] args) {
 
-        List<Producer> producers = ProducerService.findAll();
-        log.info("Producers: '{}'", producers);
+//        List<Producer> producers = ProducerService.findAll();
+//        List<Producer> producers = ProducerService.findByName("a");
+//        log.info("Producers: '{}'", producers);
+
+        ProducerService.showProducerMetadata();
 
     }
 }

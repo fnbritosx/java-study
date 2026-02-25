@@ -10,9 +10,9 @@ public class ProducerService {
         ProducerRepository.save(producer);
     }
 
-    public static void delete(int... ids){
+    public static void delete(int... ids) {
         for (int id : ids) {
-            if (id <=0) {
+            if (id <= 0) {
                 throw new IllegalArgumentException("Invalid value for id.");
             }
         }
@@ -20,17 +20,24 @@ public class ProducerService {
         ProducerRepository.delete(ids);
     }
 
-    public static void update(Producer producer){
-            if (producer.getId() == 0 || producer.getId() <= 0) {
-                throw new IllegalArgumentException("Invalid value for id.");
-            }
+    public static void update(Producer producer) {
+        if (producer.getId() == 0 || producer.getId() <= 0) {
+            throw new IllegalArgumentException("Invalid value for id.");
+        }
 
         ProducerRepository.update(producer);
     }
 
-    public static List<Producer> findAll(){
-
-
+    public static List<Producer> findAll() {
         return ProducerRepository.findAll();
     }
+
+    public static List<Producer> findByName(String name) {
+        return ProducerRepository.findByName(name);
+    }
+
+    public static void showProducerMetadata() {
+        ProducerRepository.showProducerMetadata();
+    }
+
 }
