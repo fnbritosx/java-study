@@ -43,6 +43,7 @@ public class ProducerService {
     public static void showDbMetadata() {
         ProducerRepository.showDbMetadata();
     }
+
     public static void showTypeScrollWorking() {
         ProducerRepository.showTypeScrollWorking();
     }
@@ -50,10 +51,15 @@ public class ProducerService {
     public static List<Producer> findByNameAndUpdateToUpperCase(String name) {
         return ProducerRepository.findByNameAndUpdateToUpperCase(name);
     }
+
     public static List<Producer> findByNameAndInsertWhenNotFound(String name) {
         return ProducerRepository.findByNameAndInsertWhenNotFound(name);
     }
+    public static List<Producer> findByNamePrepareStatement(String name) {
+        return ProducerRepository.findByNamePrepareStatement(name);
+    }
+
     public static void findByNameAndDelete(String name) {
-         ProducerRepository.findByNameAndDelete(name);
+        ProducerRepository.findByNameAndDelete(name);
     }
 }

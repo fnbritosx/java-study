@@ -16,8 +16,8 @@ public class ConnectionFactoryTest01 {
 //        ProducerService.showProducerMetadata();
 //        ProducerService.showDbMetadata();
 //        ProducerService.showTypeScrollWorking();
-
-        ProducerService.findByNameAndDelete("bom");
+//        ProducerService.findByNameAndDelete("bom");
+        ProducerService.findByNameAndDelete("Chuck");
     }
 }
 
