@@ -4,7 +4,6 @@ import javamarathon.javacore.jdbc.conection.ConnectionFactory;
 import javamarathon.javacore.jdbc.domain.Producer;
 import lombok.extern.log4j.Log4j2;
 
-import javax.print.attribute.standard.MediaSize;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -283,7 +282,6 @@ public class ProducerRepository {
     }
 
     public static List<Producer> findByNamePrepareStatement(String name) {
-        log.info("Finding name and updating");
         String sql = "SELECT * FROM anime_store.producer where name like ?";
         List<Producer> producers = new ArrayList<>();
         try (Connection connection = ConnectionFactory.getConnection();
@@ -291,6 +289,32 @@ public class ProducerRepository {
 
             ps.setString(1, String.format("%%%s%%", name));
             ResultSet rs = ps.executeQuery();
+
+            while (rs.next()) {
+                Producer producer = Producer.builder()
+                        .id(rs.getInt("id"))
+                        .name(rs.getString("name"))
+                        .build();
+
+                producers.add(producer);
+
+            }
+
+        } catch (SQLException e) {
+            log.error("Error while trying to find all producers", e);
+        }
+        log.info("Producer(s): {}'", producers);
+        return producers;
+    }
+
+    public static List<Producer> findByNameCallableStatement(String name) {
+        String sql = "CALL `anime_store`.`sp_get_producer_by_name`(?);";
+        List<Producer> producers = new ArrayList<>();
+        try (Connection connection = ConnectionFactory.getConnection();
+             CallableStatement cs = connection.prepareCall(sql);) {
+
+            cs.setString(1, String.format("%%%s%%", name));
+            ResultSet rs = cs.executeQuery();
 
             while (rs.next()) {
                 Producer producer = Producer.builder()

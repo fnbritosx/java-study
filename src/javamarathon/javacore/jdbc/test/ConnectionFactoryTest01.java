@@ -1,6 +1,5 @@
 package javamarathon.javacore.jdbc.test;
 
-import javamarathon.javacore.jdbc.domain.Producer;
 import javamarathon.javacore.jdbc.service.ProducerService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,7 +16,8 @@ public class ConnectionFactoryTest01 {
 //        ProducerService.showDbMetadata();
 //        ProducerService.showTypeScrollWorking();
 //        ProducerService.findByNameAndDelete("bom");
-        ProducerService.findByNameAndDelete("Chuck");
+//        ProducerService.findByNameAndDelete("Chuck");
+        ProducerService.findByNameCallableStatement("sasa");
     }
 }
 
